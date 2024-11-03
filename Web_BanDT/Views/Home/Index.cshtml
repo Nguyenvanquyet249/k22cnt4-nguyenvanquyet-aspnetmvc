@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Web_BanDT.Models.Product>
+
+@{
+    ViewBag.Title = "Trang chủ";
+}
+
+<h1>Chào mừng đến với cửa hàng điện thoại!</h1>
+
+<p>Chọn một trong các chức năng bên dưới để quản lý sản phẩm:</p>
+
+<div class="menu-options">
+    <ul>
+        <li>
+            @Html.ActionLink("Danh sách sản phẩm", "Index", "Products", null, new { @class = "btn btn-primary" })
+        </li>
+        <li>
+            @Html.ActionLink("Thêm sản phẩm mới", "Create", "Products", null, new { @class = "btn btn-success" })
+        </li>
+    </ul>
+</div>
